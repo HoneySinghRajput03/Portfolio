@@ -1,95 +1,120 @@
-# devfolio-vite
+# Honeyraj Singh Thakur — Personal Portfolio
 
-devfolio-vite is a modern, interactive React portfolio website built with Vite and styled with Tailwind CSS. It showcases projects with smooth animations and responsive design using GSAP, Framer Motion, Ant Design components, and more.
+A sleek, modern, and high-performance personal developer portfolio built with **React**, **Vite**, and **Tailwind CSS**. Designed to showcase full-stack Java engineering projects, technical skills, professional experience, education, and certifications with smooth micro-interactions and dark/light mode support.
 
-## Features
+---
 
-- Built with React 18 and Vite for lightning-fast performance
-- Styled with Tailwind CSS and Ant Design components
-- Animations powered by Framer Motion and GSAP
-- Lazy-loading sections with Intersection Observer
-- Smooth scrolling with react-scroll
-- Fully responsive and mobile-friendly
+## 🚀 Features
 
-## Table of Contents
+- **⚡ Fast & Modern Tech Stack**: Built on React 18 and Vite for instant hot-reloading and lightning-fast build performance.
+- **🎨 Curated Design System**: Warm ivory aesthetic (`#FAF8F5`) paired with a refined dark mode (`#121212`), custom corner brackets, and JetBrains Mono typography.
+- **💼 Interactive Sections**:
+  - **Hero**: Quick intro with developer title, status badge, LeetCode stats, and direct social profile links.
+  - **About**: Key metrics (200+ DSA problems solved, 6+ projects), education overview, and core professional attributes.
+  - **Technical Skills**: Structured breakdown across Frontend, Backend, Languages, and Developer Tools.
+  - **Featured Projects**: Detailed cards highlighting full-stack Java applications, REST APIs, and architecture links.
+  - **Experience & Education**: Interactive tabbed navigation covering internships, academic background, and certifications.
+  - **Contact & Direct Inquiries**: Quick email copy button, location details, and direct network links.
+- **🤖 LLM / AI Indexing**: Includes a structured `/llms.txt` file in the `public/` directory for LLM and AI agent search integration.
+- **✨ Smooth Motion**: Fluid scroll transitions and micro-animations powered by Framer Motion.
 
-- [Installation](#installation)
-- [Available Scripts](#available-scripts)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [License](#license)
+---
 
-## Installation
+## 🛠️ Tech Stack
 
-1. Clone the repository:
+### **Frontend & Framework**
+- **React.js 18** — Component-driven UI architecture
+- **Vite** — High-performance frontend tooling & bundler
+- **Tailwind CSS** — Utility-first styling workflow
+- **Framer Motion** — Smooth gesture & scroll animations
+- **Lucide React & React Icons** — Minimalist vector iconography
+
+### **Core Engineering Expertise Highlighted**
+- **Languages**: Java, C++, C, JavaScript (ES6+), SQL
+- **Backend & Frameworks**: Spring Boot, Microservices, Spring MVC, Hibernate ORM, JDBC, REST APIs
+- **Database**: MySQL
+- **Tools**: Git, GitHub, Postman, VS Code
+
+---
+
+## 📂 Project Structure
+
+```text
+Honey-Portfolio/
+├── public/
+│   ├── images/             # Profile & asset images
+│   ├── favicon.svg         # Site favicon
+│   ├── llms.txt            # LLM crawler & search indexing
+│   └── resume.pdf          # Resume document
+├── src/
+│   ├── components/
+│   │   ├── About.jsx       # About & key stats
+│   │   ├── BackToTop.jsx   # Scroll-to-top button
+│   │   ├── Contact.jsx     # Contact & direct inquiries
+│   │   ├── Experience.jsx  # Interactive tabs: Exp, Edu, Certs
+│   │   ├── Footer.jsx      # Live clock & footer links
+│   │   ├── HeroSection.jsx # Hero banner & profile card
+│   │   ├── Navbar.jsx      # Navigation header & theme toggle
+│   │   ├── Projects.jsx    # Featured projects & explore banner
+│   │   ├── Skills.jsx      # Technical skills grid
+│   │   └── ThemeToggle.jsx # Dark / light mode toggle
+│   ├── context/
+│   │   └── ThemeContext.jsx# React theme state provider
+│   ├── App.jsx             # Main application layout
+│   ├── index.css           # Global typography & styles
+│   └── main.jsx            # React root entry point
+├── package.json
+├── tailwind.config.js
+├── vite.config.js
+├── LICENSE
+└── README.md
+```
+
+---
+
+## 💻 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (version 18.x or later recommended)
+- [npm](https://www.npmjs.com/) or [bun](https://bun.sh/)
+
+### Installation
+
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/neelshha/devfolio-vite.git
+   git clone https://github.com/HoneySinghRajput03/Portfolio.git
    ```
-2. Change directory:
+
+2. **Navigate into the project directory:**
    ```bash
-   cd devfolio-vite
+   cd Honey-Portfolio
    ```
-3. Install dependencies:
+
+3. **Install dependencies:**
    ```bash
    npm install
    ```
-4. Start the development server:
+
+4. **Start the local development server:**
    ```bash
    npm run dev
    ```
+   Open `http://localhost:5173/` in your browser.
 
-## Available Scripts
+---
+
+## 📦 Available Scripts
 
 In the project directory, you can run:
 
 - `npm run dev` — Starts the development server at `http://localhost:5173/`.
-- `npm run build` — Bundles the app for production to the `dist` folder.
+- `npm run build` — Bundles the application for production to the `dist/` folder.
 - `npm run preview` — Previews the production build locally.
-- `npm run lint` — Runs ESLint on the codebase.
+- `npm run lint` — Runs ESLint to check for code quality and syntax issues.
 
-## Project Structure
+---
 
-```
-devfolio-vite/
-├── public/                 # Static assets and index.html
-├── src/
-│   ├── assets/             # Images, icons, fonts, etc.
-│   ├── components/         # Reusable React components
-│   ├── pages/              # Page-level components
-│   ├── styles/             # Global CSS/Tailwind imports
-│   ├── App.jsx             # Root React component
-│   └── main.jsx            # App entry point
-├── tailwind.config.js      # Tailwind CSS configuration
-├── postcss.config.js       # PostCSS configuration
-├── vite.config.js          # Vite configuration
-├── package.json
-└── README.md
-```
-
-## Technologies Used
-
-**Dependencies:**
-- React ^18.2.0
-- React DOM ^18.2.0
-- Vite ^5.4.10
-- Tailwind CSS ^3.4.1
-- Ant Design ^5.21.5
-- Framer Motion ^11.11.9
-- GSAP ^3.12.5
-- react-intersection-observer ^9.13.1
-- react-scroll ^1.9.0
-- lucide-react ^0.344.0
-- react-icons ^5.3.0
-
-**Dev Dependencies:**
-- @vitejs/plugin-react
-- ESLint and React plugins
-- PostCSS and Autoprefixer
-
-## License
+## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Author
-
-Created by Neel Shah 
