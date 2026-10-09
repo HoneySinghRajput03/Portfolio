@@ -1,0 +1,59 @@
+# Honeyraj Singh Thakur
+
+> Personal portfolio of Honeyraj Singh Thakur, a Java Full Stack Developer focused on Java, Spring Boot, backend development, and full-stack applications.
+
+## About
+
+Honeyraj Singh Thakur is a Java Full Stack Developer based in Indore, Madhya Pradesh, India. Currently pursuing a Bachelor of Computer Application (BCA) at Renaissance University, Indore (2023 — 2026). Has practical experience developing responsive full-stack web applications, designing RESTful APIs, implementing database integration with Hibernate ORM, and solving 200+ Data Structures & Algorithms challenges on LeetCode with a focus on clean, scalable architecture.
+
+## Skills
+
+- Frontend: React.js, HTML5, CSS3, JavaScript (ES6+), Tailwind CSS, Bootstrap, Thymeleaf
+- Backend: Spring Boot, Microservices, Spring Framework, Spring MVC, Hibernate ORM, JDBC, MySQL, REST APIs
+- Languages: Java, C++, C
+- Developer Tools: Git, GitHub, Postman, VS Code
+
+## Projects
+
+- Employee Management System
+  - Description: Full stack employee management platform featuring secure authentication, role-based access control, employee data management, and automated business workflows.
+  - Technologies: Java, Spring Boot, React.js, MySQL, Hibernate, REST APIs, Bootstrap
+  - GitHub: https://github.com
+
+- Online Food Ordering System
+  - Description: Interactive online food ordering platform with dynamic menu browsing, cart management, user authentication, and end-to-end order tracking features.
+  - Technologies: React.js, Spring Boot, MySQL, REST APIs, JavaScript, CSS3
+  - GitHub: https://github.com
+
+- Student Result Management System
+  - Description: Robust result management application using Core Java and JDBC. Provides efficient database connectivity, automated result calculation, and student report generation.
+  - Technologies: Core Java, JDBC, MySQL, SQL, OOPs
+  - GitHub: https://github.com
+
+## Experience and Education
+
+### Experience
+- Java Full Stack Developer Intern — Softvyom Consulting Services Pvt. Ltd. (2026, Remote)
+  - Developed responsive full stack web applications using React.js and Spring Boot.
+  - Designed and integrated RESTful APIs for efficient frontend-backend communication.
+  - Implemented CRUD operations with MySQL database integration using Hibernate ORM.
+  - Collaborated with development team using Git and GitHub version control workflows.
+  - Optimized application performance and improved UI responsiveness across devices.
+
+### Education
+- Bachelor of Computer Application (BCA) — Renaissance University, Indore, Madhya Pradesh (2023 — 2026)
+- Higher Secondary Education (Class 12th) — Nav Jagriti Higher Secondary School, Damoh, Madhya Pradesh (2023, Commerce Stream)
+- Secondary Education (Class 10th) — Nav Jagriti Higher Secondary School, Damoh, Madhya Pradesh (2021)
+
+### Certifications
+- Java Full Stack Development Certification (2025)
+- Data Structures and Algorithms using Java (2025)
+- React.js and Spring Boot Training Program (2024)
+
+## Contact
+
+- Email: rjpthoney99@gmail.com
+- Location: Indore, Madhya Pradesh, India
+- LinkedIn: https://linkedin.com
+- GitHub: https://github.com
+- X (Twitter): https://x.com
