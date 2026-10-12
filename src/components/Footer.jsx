@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
 
           {/* Center Column: Social Links with Icons */}
-          <div className="flex items-center gap-4 sm:gap-6 flex-nowrap shrink-0 whitespace-nowrap">
+          <div className="flex items-center gap-4 sm:gap-6 flex-wrap justify-center shrink-0">
             {/* LinkedIn */}
             <a
               href="https://linkedin.com"
@@ -88,17 +88,19 @@ const Footer = () => {
           </div>
 
           {/* Right Column: Live Indore Clock & Copyright */}
-          <div className="flex items-center gap-3 sm:gap-5 text-[11px] font-mono text-primary-600/80 dark:text-dark-400 shrink-0 whitespace-nowrap">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-[11px] font-mono text-primary-600/80 dark:text-dark-400 text-center md:text-right">
             {/* Live Indore Time */}
-            <div className="flex items-center gap-1 whitespace-nowrap">
+            <div className="flex items-center gap-1">
               <span className="text-primary-500 dark:text-dark-400">Indore:</span>
               <span className="font-bold text-primary-900 dark:text-dark-50 tabular-nums">
                 {time}
               </span>
             </div>
 
+            <span className="hidden sm:inline opacity-40">•</span>
+
             {/* Copyright */}
-            <span className="whitespace-nowrap">
+            <span className="text-center">
               © {new Date().getFullYear()} Honeyraj Singh Thakur. All rights reserved.
             </span>
           </div>

@@ -32,7 +32,7 @@ const BackToTop = () => {
           transition={{ duration: 0.2 }}
           onClick={scrollToTop}
           aria-label="Back to top"
-          className="fixed bottom-8 right-8 z-40 w-11 h-11 rounded-full bg-[#18181B] text-white dark:bg-dark-50 dark:text-dark-900 shadow-xl flex items-center justify-center cursor-pointer border border-white/10 dark:border-dark-700/50"
+          className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-40 w-11 h-11 rounded-full bg-[#18181B] text-white dark:bg-dark-50 dark:text-dark-900 shadow-xl flex items-center justify-center cursor-pointer border border-white/10 dark:border-dark-700/50"
           whileHover={{ scale: 1.1, y: -2 }}
           whileTap={{ scale: 0.95 }}
         >

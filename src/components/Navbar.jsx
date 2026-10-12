@@ -53,7 +53,7 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 w-full max-w-full z-50 transition-all duration-300 ${
         isScrolled ? 'bg-primary-50/90 dark:bg-dark-900/90 backdrop-blur-md border-b border-primary-200/50 dark:border-dark-700/50 shadow-sm' : 'bg-transparent'
       }`}
     >

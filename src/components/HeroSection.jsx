@@ -33,10 +33,10 @@ const HeroSection = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.1, duration: 0.8 }}
-              className="mb-6 inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary-200 dark:border-dark-700 bg-[#F2EFE9] dark:bg-dark-800 text-xs font-mono text-primary-700/80 dark:text-dark-200/80"
+              className="mb-6 inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary-200 dark:border-dark-700 bg-[#F2EFE9] dark:bg-dark-800 text-xs font-mono text-primary-700/80 dark:text-dark-200/80 max-w-full"
             >
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              Available for Java Full Stack Roles • Indore, MP
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
+              <span className="truncate sm:whitespace-normal">Available for Java Full Stack Roles • Indore, MP</span>
             </motion.div>
 
             {/* Name Box in Title Case */}
@@ -44,15 +44,15 @@ const HeroSection = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="relative inline-block mb-6"
+              className="relative inline-block mb-6 max-w-full"
             >
-              <div className="absolute inset-0 border border-primary-200 dark:border-dark-700">
+              <div className="absolute inset-0 border border-primary-200 dark:border-dark-700 pointer-events-none">
                 <div className="absolute -top-1 -left-1 w-2 h-2 bg-primary-200 dark:bg-dark-700"></div>
                 <div className="absolute -top-1 -right-1 w-2 h-2 bg-primary-200 dark:bg-dark-700"></div>
                 <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-primary-200 dark:bg-dark-700"></div>
                 <div className="absolute -bottom-1 -right-1 w-2 h-2 bg-primary-200 dark:bg-dark-700"></div>
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-900 dark:text-dark-50 font-mono px-6 py-4">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-900 dark:text-dark-50 font-mono px-4 py-3 sm:px-6 sm:py-4 break-words">
                 Honeyraj Singh Thakur
               </h1>
             </motion.div>
@@ -185,7 +185,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="w-full sm:w-80 lg:w-[360px] flex-shrink-0"
+            className="w-full sm:w-80 lg:w-[360px] flex-shrink-0 max-w-full"
           >
             <div className="relative bg-[#F2EFE9] dark:bg-dark-800 p-6 sm:p-7 group shadow-sm">
               {/* Corner brackets */}
@@ -223,7 +223,7 @@ const HeroSection = () => {
               </div>
 
               {/* Bottom Row: 200+ LEETCODE SOLVED and CLEAN ARCHITECTURE */}
-              <div className="pt-4 border-t border-primary-200/80 dark:border-dark-700/80 flex items-center justify-between font-mono text-[11px] text-primary-600/90 dark:text-dark-300 uppercase tracking-wider">
+              <div className="pt-4 border-t border-primary-200/80 dark:border-dark-700/80 flex items-center justify-between font-mono text-[10px] sm:text-[11px] text-primary-600/90 dark:text-dark-300 uppercase tracking-wider">
                 <span className="font-bold">200+ LEETCODE SOLVED</span>
                 <span className="font-bold">CLEAN ARCHITECTURE</span>
               </div>

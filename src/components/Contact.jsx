@@ -44,7 +44,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="bg-[#FAF8F5] dark:bg-dark-900 pt-10 pb-16 sm:pt-12 sm:pb-20 transition-colors duration-200">
+    <section id="contact" className="bg-[#FAF8F5] dark:bg-dark-900 pt-10 pb-16 sm:pt-12 sm:pb-20 transition-colors duration-200 w-full max-w-full overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -86,7 +86,7 @@ const Contact = () => {
                 <div className="flex items-center gap-2.5 flex-wrap">
                   <a
                     href={`mailto:${email}`}
-                    className="text-lg sm:text-2xl md:text-[26px] font-mono font-medium text-primary-900 dark:text-dark-50 hover:text-primary-600 dark:hover:text-dark-200 transition-colors underline decoration-primary-300 dark:decoration-dark-600 underline-offset-4"
+                    className="text-lg sm:text-2xl md:text-[26px] font-mono font-medium text-primary-900 dark:text-dark-50 hover:text-primary-600 dark:hover:text-dark-200 transition-colors underline decoration-primary-300 dark:decoration-dark-600 underline-offset-4 break-all"
                   >
                     {email}
                   </a>

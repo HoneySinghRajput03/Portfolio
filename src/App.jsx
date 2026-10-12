@@ -13,9 +13,9 @@ import BackToTop from "./components/BackToTop";
 const App = () => {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-[#FAF8F5] dark:bg-dark-900 transition-colors duration-200">
+      <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-[#FAF8F5] dark:bg-dark-900 transition-colors duration-200">
         <Navbar />
-        <main>
+        <main className="w-full max-w-full overflow-x-hidden">
           <HeroSection />
           <About />
           <Skills />
