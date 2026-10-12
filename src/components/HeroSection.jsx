@@ -19,24 +19,24 @@ const HeroSection = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 lg:gap-16 w-full">
           
           {/* Left Column: Info & CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex-1 text-left"
+            className="w-full min-w-0 flex-1 text-left"
           >
             {/* Status badge */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.1, duration: 0.8 }}
-              className="mb-6 inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary-200 dark:border-dark-700 bg-[#F2EFE9] dark:bg-dark-800 text-xs font-mono text-primary-700/80 dark:text-dark-200/80 max-w-full"
+              className="mb-6 inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary-200 dark:border-dark-700 bg-[#F2EFE9] dark:bg-dark-800 text-[11px] sm:text-xs font-mono text-primary-700/80 dark:text-dark-200/80 max-w-full"
             >
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
-              <span className="truncate sm:whitespace-normal">Available for Java Full Stack Roles • Indore, MP</span>
+              <span className="leading-tight">Available for Java Full Stack Roles • Indore, MP</span>
             </motion.div>
 
             {/* Name Box in Title Case */}
@@ -52,8 +52,9 @@ const HeroSection = () => {
                 <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-primary-200 dark:bg-dark-700"></div>
                 <div className="absolute -bottom-1 -right-1 w-2 h-2 bg-primary-200 dark:bg-dark-700"></div>
               </div>
-              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-900 dark:text-dark-50 font-mono px-4 py-3 sm:px-6 sm:py-4 break-words">
-                Honeyraj Singh Thakur
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-900 dark:text-dark-50 font-mono px-4 py-3 sm:px-6 sm:py-4 leading-tight">
+                <span className="block sm:inline">Honeyraj</span>{' '}
+                <span className="block sm:inline">Singh Thakur</span>
               </h1>
             </motion.div>
 
@@ -64,7 +65,7 @@ const HeroSection = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="mb-6"
             >
-              <h2 className="text-lg sm:text-xl md:text-2xl text-primary-700/80 dark:text-dark-200/80 font-mono uppercase tracking-widest">
+              <h2 className="text-base sm:text-xl md:text-2xl text-primary-700/80 dark:text-dark-200/80 font-mono uppercase tracking-wider sm:tracking-widest">
                 <span className="border-b border-primary-200 dark:border-dark-700 pb-1">JAVA FULL STACK DEVELOPER</span>
               </h2>
             </motion.div>
@@ -84,7 +85,7 @@ const HeroSection = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
-              className="flex flex-wrap items-center gap-6 mb-10"
+              className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 sm:gap-6 mb-10 w-full sm:w-auto"
             >
               <motion.a
                 href="#projects"
@@ -92,7 +93,7 @@ const HeroSection = () => {
                   e.preventDefault();
                   smoothScrollTo('projects');
                 }}
-                className="px-6 py-3 border border-primary-900 dark:border-dark-50 text-primary-900 dark:text-dark-50 font-mono text-sm uppercase tracking-widest cursor-pointer inline-block"
+                className="px-6 py-3 border border-primary-900 dark:border-dark-50 text-primary-900 dark:text-dark-50 font-mono text-sm uppercase tracking-widest cursor-pointer text-center"
                 whileHover={{ x: 5 }}
               >
                 View Selected Work →
@@ -103,7 +104,7 @@ const HeroSection = () => {
                 download="Resume.HoneyrajSingh.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 border border-primary-200 dark:border-dark-700 text-primary-700/90 dark:text-dark-200/90 font-mono text-sm uppercase tracking-widest inline-block"
+                className="px-6 py-3 border border-primary-200 dark:border-dark-700 text-primary-700/90 dark:text-dark-200/90 font-mono text-sm uppercase tracking-widest text-center"
                 whileHover={{ x: 5 }}
               >
                 Download CV ↓
@@ -115,7 +116,7 @@ const HeroSection = () => {
                   e.preventDefault();
                   smoothScrollTo('contact');
                 }}
-                className="text-primary-700/80 dark:text-dark-200/80 hover:text-primary-900 dark:hover:text-dark-50 font-mono text-sm uppercase tracking-widest cursor-pointer inline-flex items-center gap-1"
+                className="text-primary-700/80 dark:text-dark-200/80 hover:text-primary-900 dark:hover:text-dark-50 font-mono text-sm uppercase tracking-widest cursor-pointer inline-flex items-center justify-center sm:justify-start gap-1 py-2 sm:py-0"
                 whileHover={{ x: 5 }}
               >
                 Get in Touch →
@@ -185,7 +186,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="w-full sm:w-80 lg:w-[360px] flex-shrink-0 max-w-full"
+            className="w-full sm:w-80 lg:w-[360px] mx-auto lg:mx-0 flex-shrink-0 max-w-full"
           >
             <div className="relative bg-[#F2EFE9] dark:bg-dark-800 p-6 sm:p-7 group shadow-sm">
               {/* Corner brackets */}
