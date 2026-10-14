@@ -12,7 +12,7 @@ const attributes = [
 
 const About = () => {
   return (
-    <section id="about" className="min-h-screen bg-[#FAF8F5] dark:bg-dark-900 pt-14 pb-12 sm:pt-16 sm:pb-14 flex items-center transition-colors duration-200 w-full max-w-full overflow-hidden">
+    <section id="about" className="bg-[#FAF8F5] dark:bg-dark-900 py-16 sm:py-20 transition-colors duration-200 w-full max-w-full overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -22,7 +22,7 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="min-h-screen bg-[#FAF8F5] dark:bg-dark-900 pt-6 pb-16 sm:pt-8 sm:pb-16 flex items-center transition-colors duration-200 w-full max-w-full overflow-hidden">
+    <section id="skills" className="bg-[#FAF8F5] dark:bg-dark-900 py-16 sm:py-20 transition-colors duration-200 w-full max-w-full overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
