@@ -12,7 +12,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen bg-[#FAF8F5] dark:bg-dark-900 flex items-center justify-center relative overflow-hidden transition-colors duration-200 pt-20 pb-16 sm:pb-20">
+    <section id="home" className="min-h-screen bg-[#FAF8F5] dark:bg-dark-900 flex items-center justify-center relative overflow-hidden transition-colors duration-200 pt-20 pb-16 sm:pb-[75px]">
       {/* Background grid pattern */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000011_1px,transparent_1px),linear-gradient(to_bottom,#00000011_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
